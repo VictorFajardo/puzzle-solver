@@ -1,0 +1,22 @@
+{
+  "name": "puzzle-solver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VictorFajardo/puzzle-solver.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VictorFajardo/puzzle-solver/issues"
+  },
+  "homepage": "https://github.com/VictorFajardo/puzzle-solver#readme",
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
