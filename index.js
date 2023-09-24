@@ -1,10 +1,13 @@
-import pieces from "./pieces/type1.js";
+import type1 from "./pieces/type1.js";
+import type2 from "./pieces/type2.js";
+
+const pieces = [...type1, ...type2];
 
 const search = function (sizeA, typeA, sizeB, typeB, delta = 0.2) {
   const response = [];
 
   for (let i = 0; i < pieces.length; i++) {
-    const { id, sides } = pieces[i];
+    const { type, id, sides } = pieces[i];
     for (let j = 0; j < sides.length; j++) {
       const curr = sides[j];
       const next = sides[j === 3 ? 0 : j + 1];
@@ -16,7 +19,7 @@ const search = function (sizeA, typeA, sizeB, typeB, delta = 0.2) {
         next.size <= sizeB + delta &&
         typeB === next.type
       ) {
-        response.push(id);
+        response.push("id: " + id + " in type: " + type);
         break;
       }
     }
