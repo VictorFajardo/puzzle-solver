@@ -1,61 +1,6 @@
-const pieces = [
-  {
-    id: 0,
-    sides: [
-      { size: 0.59, type: "M" },
-      { size: 0.77, type: "F" },
-      { size: 0.61, type: "M" },
-      { size: 0.77, type: "F" },
-    ],
-  },
-  {
-    id: 1,
-    sides: [
-      { size: 0.65, type: "M" },
-      { size: 0.67, type: "F" },
-      { size: 0.65, type: "M" },
-      { size: 0.66, type: "F" },
-    ],
-  },
-  {
-    id: 2,
-    sides: [
-      { size: 0.59, type: "M" },
-      { size: 0.65, type: "F" },
-      { size: 0.58, type: "M" },
-      { size: 0.65, type: "F" },
-    ],
-  },
-  {
-    id: 3,
-    sides: [
-      { size: 0.73, type: "M" },
-      { size: 0.65, type: "F" },
-      { size: 0.7, type: "M" },
-      { size: 0.64, type: "F" },
-    ],
-  },
-  {
-    id: 4,
-    sides: [
-      { size: 0.65, type: "M" },
-      { size: 0.72, type: "F" },
-      { size: 0.65, type: "M" },
-      { size: 0.69, type: "F" },
-    ],
-  },
-  {
-    id: 5,
-    sides: [
-      { size: 0.62, type: "M" },
-      { size: 0.72, type: "F" },
-      { size: 0.61, type: "M" },
-      { size: 0.72, type: "F" },
-    ],
-  },
-];
+import pieces from "./pieces/type1.js";
 
-search = function (sizeA, typeA, sizeB, typeB, delta = 0) {
+const search = function (sizeA, typeA, sizeB, typeB, delta = 0.2) {
   const response = [];
 
   for (let i = 0; i < pieces.length; i++) {
@@ -84,4 +29,4 @@ search = function (sizeA, typeA, sizeB, typeB, delta = 0) {
   }
 };
 
-search(0.59, "M", 0.77, "F");
+search(15.1, "M", 19.5, "F");

@@ -16,6 +16,7 @@
     "url": "https://github.com/VictorFajardo/puzzle-solver/issues"
   },
   "homepage": "https://github.com/VictorFajardo/puzzle-solver#readme",
+  "type": "module",
   "devDependencies": {
     "nodemon": "^3.0.1"
   }
