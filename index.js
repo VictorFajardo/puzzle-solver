@@ -1,7 +1,8 @@
 import type1 from "./pieces/type1.js";
 import type2 from "./pieces/type2.js";
+import type3 from "./pieces/type3.js";
 
-const pieces = [...type1, ...type2];
+const pieces = [...type1, ...type2, ...type3];
 
 const search = function (sizeA, typeA, sizeB, typeB, delta = 0.2) {
   const response = [];
@@ -32,4 +33,4 @@ const search = function (sizeA, typeA, sizeB, typeB, delta = 0.2) {
   }
 };
 
-search(15.1, "M", 19.5, "F");
+search(17.5, "M", 19.4, "M");

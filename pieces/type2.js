@@ -181,7 +181,7 @@ const type2 = [
   },
   {
     type: 2,
-    id: 18,
+    id: 19,
     sides: [
       { size: 16.7, type: "M" },
       { size: 18.0, type: "M" },

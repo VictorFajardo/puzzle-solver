@@ -239,26 +239,6 @@ const type1 = [
       { size: 15, type: "F" },
     ],
   },
-  {
-    type: 1,
-    id: 25,
-    sides: [
-      { size: 19.1, type: "M" },
-      { size: 15.2, type: "F" },
-      { size: 18.3, type: "M" },
-      { size: 15.2, type: "F" },
-    ],
-  },
-  {
-    type: 1,
-    id: 26,
-    sides: [
-      { size: 15, type: "M" },
-      { size: 19.6, type: "F" },
-      { size: 15.5, type: "M" },
-      { size: 19.6, type: "F" },
-    ],
-  },
 ];
 
 export default type1;
