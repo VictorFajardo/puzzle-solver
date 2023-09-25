@@ -13,12 +13,12 @@ const search = function (sizeA, typeA, sizeB, typeB, delta = 0.2) {
       const curr = sides[j];
       const next = sides[j === 3 ? 0 : j + 1];
       if (
+        typeA === curr.type &&
+        typeB === next.type &&
         curr.size >= sizeA - delta &&
         curr.size <= sizeA + delta &&
-        typeA === curr.type &&
         next.size >= sizeB - delta &&
-        next.size <= sizeB + delta &&
-        typeB === next.type
+        next.size <= sizeB + delta
       ) {
         response.push("id: " + id + " in type: " + type);
         break;
@@ -26,6 +26,7 @@ const search = function (sizeA, typeA, sizeB, typeB, delta = 0.2) {
     }
   }
 
+  console.clear();
   if (response.length) {
     console.log("Match id's :", response);
   } else {
