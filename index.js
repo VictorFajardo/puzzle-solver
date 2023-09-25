@@ -33,4 +33,4 @@ const search = function (sizeA, typeA, sizeB, typeB, delta = 0.2) {
   }
 };
 
-search(17.5, "M", 19.4, "M");
+search(18.5, "F", 16.2, "M");
